@@ -1,0 +1,13 @@
+[tools]
+python = {version="3.12", virtualenv=".venv"}
+poetry = "latest"
+
+[env]
+_.python.venv = { path = ".venv", create = true }
+
+[tasks.init]
+run = "poetry install"
+
+[tasks.up]
+depends = ["init"]
+run = "streamlit run src/main.py"

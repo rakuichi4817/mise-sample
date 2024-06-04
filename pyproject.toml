@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mise-sample"
+version = "0.1.0"
+description = ""
+authors = ["rakuichi"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.35.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+max-line-length = 88
+ignore = "E203,W503,W504"
